@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "airbnb-base"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "DEVELOPMENT": "readonly",
+    "PRODUCTION": "readonly"
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 12
+  },
+  "rules": {
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "no-underscore-dangle": "off",
+    "no-console": "off",
+    "global-require": 0,
+    "prefer-promise-reject-errors": [
+      "error",
+      {
+        "allowEmptyReject": true
+      }
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "^@/",
+          "^@static"
+        ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "": "never",
+        "js": "never",
+        "mjs": "never"
+      }
+    ],
+    "vue/multi-word-component-names": 0
+  }
+}
