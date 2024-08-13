@@ -6,6 +6,7 @@
       :class="$style.logo"
     >
     <hello-world :msg />
+    <h5-audio-controls src="https://cycjimmy.github.io/staticFiles/media/Richard_Clayderman-LOVE_IS_BLUE.mp3" />
 
     <nav :class="$style.nav">
       <h2>Navigation menu</h2>
@@ -33,7 +34,8 @@
 
 <script setup>
 import imgLogo from '@static/images/logo.png';
-import HelloWorld from '@/components/HelloWorld.vue';
+import HelloWorld from '@/components/helloWorld/HelloWorld.vue';
+import H5AudioControls from '@/components/h5AudioControl/H5AudioControl.vue';
 
 const logoSrc = imgLogo;
 const msg = 'Welcome to Vue.js App';
